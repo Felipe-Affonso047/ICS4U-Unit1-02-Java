@@ -1,5 +1,5 @@
 /*
-* The "log" program calculates how many logs fit in a truck.
+* The "Energy" program calculates how much energy object can be converted to.
 *
 * @author  Felipe Garcia Affonso
 * @version 1.0
@@ -15,7 +15,7 @@ final class Energy {
     /**
     * Created constants.
     */
-    public static final double LIGHT_SPEED =  2.998;
+    public static final double LIGHT_SPEED = 2.998;
 
     /**
     * Prevent instantiation.
@@ -35,27 +35,25 @@ final class Energy {
     * @param args No args will be used
     */
     public static void main(final String[] args) {
-
-	try {
+        try {
             // get the logs length
             // code from https://www.w3schools.com/java/java_user_input.asp
             final Scanner input = new Scanner(System.in);
-	    System.out.println(
-	        "Insert the mass of the object in Kg:"
-	    );
+            System.out.println(
+                "Insert the mass of the object in Kg:"
+            );
 
             final double mass = input.nextFloat();
             final double energy = mass * LIGHT_SPEED * LIGHT_SPEED;
 
             System.out.println(
-	        "\nThe amount of energy the object would produce is: "
-	        + energy + "x10^16 joules"
+                "\nThe amount of energy the object would produce is: "
+                + energy + "x10^16 joules"
             );
         }
-        catch (Exception error) {
+        catch (java.util.InputMismatchException error) {
             System.out.println("\nThere was an error: " + error);
-	    }
+        }
         System.out.println("\nDone.");
     }
 }
-

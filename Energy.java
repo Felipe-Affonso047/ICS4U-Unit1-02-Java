@@ -50,8 +50,7 @@ final class Energy {
                 "\nThe amount of energy the object would produce is: "
                 + energy + "x10¹⁶ joules"
             );
-        }
-        catch (java.util.InputMismatchException error) {
+        } catch (java.util.InputMismatchException error) {
             System.out.println("\nThere was an error: " + error);
         }
         System.out.println("\nDone.");

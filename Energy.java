@@ -48,7 +48,7 @@ final class Energy {
 
             System.out.println(
                 "\nThe amount of energy the object would produce is: "
-                + energy + "x10^16 joules"
+                + energy + "x10¹⁶ joules"
             );
         }
         catch (java.util.InputMismatchException error) {
